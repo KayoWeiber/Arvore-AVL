@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>Árvore AVL</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <section class="container">
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nobis fugit facilis adipisci nostrum reiciendis iste atque quaerat voluptates totam inventore sint deleniti neque commodi nulla non ipsum, aliquam illo!</p>
-
+        <h1>Construção da Árvore AVL</h1>
+        <form id="formArvore">
+            <label for="numeros">Digite a sequência de números (separados por vírgula):</label>
+            <input type="text" id="numeros" placeholder="Exemplo: 10,20,30,40,50">
+            <button type="submit">Iniciar Construção</button>
         </form>
+        <div id="resultados" style="display: none;">
+            <h2>Resultados</h2>
+            <p id="etapas"></p>
+            <button id="verEtapas">Ver etapas</button>
+        </div>
+        <div id="containerEtapas" style="display: none;">
+            <h2>Etapas da Construção</h2>
+            <div id="visualizacaoArvore"></div>
+            <button id="proximaEtapa">Próxima Etapa</button>
+        </div>
     </section>
-    
-
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

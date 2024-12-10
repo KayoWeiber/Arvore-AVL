@@ -37,6 +37,7 @@ form input:focus{
 }
 form button{
     border: none;
+    border-radius: 15px;
     background-color: var(--primary-color);
     color: #fff;
     font-size: 18px;
@@ -47,4 +48,20 @@ form button{
 }
 form button:hover{
     background-color: var(--primary-color-dark);
+}
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+    border: 2px solid red;
+}
+#proximaEtapa,#verEtapas{
+    border: none;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
 }
