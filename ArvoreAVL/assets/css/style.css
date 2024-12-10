@@ -65,3 +65,39 @@ form button:hover{
     cursor: pointer;
     margin-top: 30px;
 }
+.nodo {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.nodo .chave {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+    background: white;
+}
+
+.nodo.desequilibrado .chave {
+    background: red;
+    color: white;
+}
+
+.nodo.corrigido .chave {
+    background: green;
+    color: white;
+}
+
+
+.filhos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.filhos .esquerda, .filhos .direita {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
